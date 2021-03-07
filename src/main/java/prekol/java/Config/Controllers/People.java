@@ -24,7 +24,6 @@ public class People {
     @GetMapping()
     public String Index(Model model){
         model.addAttribute("people", personDao.index());
-        //vse humans
         return ("people/index");
     }
     @GetMapping("/{id}")

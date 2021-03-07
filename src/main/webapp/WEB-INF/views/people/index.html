@@ -5,14 +5,14 @@
     <title>all people</title>
 </head>
 <body/>
-
+<center>
 <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}"
        th:text="${person.getAge()+' ,'+ person.getEmail()}">user</a>
-
 </div>
  <br>
 <hr/>
 <a href="/people/new">Create new person</a>
+</center>
 </body>
 </html>

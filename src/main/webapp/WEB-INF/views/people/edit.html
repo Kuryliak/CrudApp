@@ -5,7 +5,7 @@
     <title>Update person</title>
 </head>
 <body>
-
+<center>
 <form th:method="PATCH" th:action="@{/people/{id}(id=${person.getId()})}" th:object="${person}">
     <label for="age">Enter new age: </label>
     <input type="text" th:field="*{age}" id="age"/>
@@ -19,6 +19,7 @@
     <br/>
     <a href="/people">Go back</a>
 </form>
+    </center>
 
 </body>
 </html>

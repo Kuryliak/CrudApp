@@ -5,6 +5,7 @@
     <title>Show</title>
 </head>
 <body>
+<center>
           <p th:text="${'User age:' + person.getAge()}">VALUE</p>
           <p th:text="${'User email: ' + person.getEmail()}">VALUE</p>
           <p th:text="${'User id :' +person.getId()}">VALUE</p>
@@ -15,5 +16,7 @@
               <a style="color:blue" th:href="@{/people/{id}/edit(id=${person.getId()})}">EDIT</a>
 
 </form>
+</center>
 </body>
+
 </html>
