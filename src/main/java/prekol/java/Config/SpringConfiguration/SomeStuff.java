@@ -1,4 +1,4 @@
-package prekol.java.Config.SpringConfigs;
+package prekol.java.Config.SpringConfiguration;
 
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
@@ -10,7 +10,7 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import java.util.EnumSet;
 
-public class A extends AbstractAnnotationConfigDispatcherServletInitializer {
+public class SomeStuff extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return null;

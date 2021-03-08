@@ -4,7 +4,7 @@ import javax.validation.constraints.*;
 
 public class Person {
     private int id;
-    @Email(message = "it's not a email")
+    @Email()
     @Size(max = 30)
     private String email;
     @Min(value = 0)

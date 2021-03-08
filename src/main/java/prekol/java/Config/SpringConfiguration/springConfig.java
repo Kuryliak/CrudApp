@@ -1,4 +1,4 @@
-package prekol.java.Config.SpringConfigs;
+package prekol.java.Config.SpringConfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -22,7 +22,6 @@ import java.sql.DriverManager;
 @EnableWebMvc
 public class springConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
-
     @Autowired
     public springConfig(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;

@@ -6,7 +6,12 @@
 </head>
 <body/>
 <center>
-<div th:each="person : ${people}">
+    <form method="get" action="search">
+        <input type="text" name="keyword" />
+        <input type="submit" value="Search" />
+    </form>
+    <br/>
+       <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}"
        th:text="${person.getAge()+' ,'+ person.getEmail()}">user</a>
 </div>
