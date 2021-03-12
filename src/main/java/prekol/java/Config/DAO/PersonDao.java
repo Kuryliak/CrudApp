@@ -25,12 +25,12 @@ public class PersonDao {
                 .stream().findAny().orElse(null);
     }
     public void save(Person person) {
-        jdbcTemplate.update("INSERT INTO Person (email,age) VALUES(?,?)",person.getEmail(),
-                person.getAge());
+        jdbcTemplate.update("INSERT INTO Person (email,age,firstname) VALUES(?,?,?)",person.getEmail(),
+                person.getAge(),person.getFirstname());
     }
     public void update(int id,Person updatedperson){
-        jdbcTemplate.update("UPDATE Person SET email=?,age=? WHERE id=?",
-                updatedperson.getEmail(),updatedperson.getAge(),id);
+        jdbcTemplate.update("UPDATE Person SET firstname=?,email=?,age=? WHERE id=?",
+                updatedperson.getEmail(),updatedperson.getAge(),updatedperson.getFirstname(),id);
     }
     public void delete(int id){
         jdbcTemplate.update("DELETE FROM Person WHERE id=?",id);

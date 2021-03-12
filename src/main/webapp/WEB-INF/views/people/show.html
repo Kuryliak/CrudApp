@@ -6,6 +6,7 @@
 </head>
 <body>
 <center>
+         <p th:text="${'User name:' + person.getFirstname()}">VALUE</p>
           <p th:text="${'User age:' + person.getAge()}">VALUE</p>
           <p th:text="${'User email: ' + person.getEmail()}">VALUE</p>
           <p th:text="${'User id :' +person.getId()}">VALUE</p>

@@ -13,7 +13,9 @@
     <br/>
        <div th:each="person : ${people}">
     <a th:href="@{/people/{id}(id=${person.getId()})}"
-       th:text="${person.getAge()+' ,'+ person.getEmail()}">user</a>
+       th:text="${person.getFirstname()+'
+       , ' +person.getAge()+'
+       ,'+ person.getEmail()}">user</a>
 </div>
  <br>
 <hr/>

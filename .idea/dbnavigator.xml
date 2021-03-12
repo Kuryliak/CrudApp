@@ -26,13 +26,14 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="1fa5c72d-4b9c-41f9-8bd5-01269f13036b">
-        <schema name="public" object-types="view, table, sequence, function" />
+        <schema name="pg_catalog" object-types="table, view, function" />
+        <schema name="public" object-types="column, table, view, sequence, function" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="1fa5c72d-4b9c-41f9-8bd5-01269f13036b">
-      <console name="db" type="STANDARD" schema="public" session="Main"><![CDATA[select * from person]]></console>
+      <console name="db" type="STANDARD" schema="public" session="Main"><![CDATA[select * from  person]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
@@ -109,7 +110,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
